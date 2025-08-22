@@ -12,7 +12,7 @@ class BankAccount {
 
   withdraw(amount) {
     if (amount > this.balance) {
-      console.log("Insufficient funds!");
+      console.log(" balance ");
     } else {
       this.balance -= amount;
       console.log(`Withdrew: ${amount}. New Balance: ${this.balance}`);
@@ -20,13 +20,13 @@ class BankAccount {
   }
 
   checkBalance() {
-    console.log(`Account balance for ${this.owner}: ${this.balance}`);
+    console.log(`Accountbalance for ${this.owner}: ${this.balance}`);
   }
 }
 
-let account = new BankAccount("Ammar", 1000);
-account.deposit(500);
-account.withdraw(300);
+let account = new BankAccount("person", 1000);
+account.deposit(800);
+account.withdraw(100);
 account.checkBalance();
 
 class TodoList {
@@ -54,13 +54,13 @@ class TodoList {
 
 let myTodos = new TodoList();
 myTodos.addTask("Complete Assignment");
-myTodos.addTask("Go for Walk");
+myTodos.addTask("feel free");
 myTodos.listTasks();
-myTodos.removeTask("Go for Walk");
+myTodos.removeTask("feel free");
 myTodos.listTasks();
 
 
-console.log("************* School Class Hierarchy *************");
+
 
 class Person {
   constructor(name, age) {
@@ -80,7 +80,7 @@ class Student extends Person {
   }
 
   study() {
-    console.log(`${this.name} is studying in grade ${this.grade}.`);
+    console.log(`${this.name} is studying in  ${this.grade}.`);
   }
 }
 
@@ -95,10 +95,11 @@ class Teacher extends Person {
   }
 }
 
-let student1 = new Student("Ali", 15, "10th");
+let student1 = new Student("khizer", 19, "8th");
 student1.introduce();
 student1.study();
 
-let teacher1 = new Teacher("Sara", 30, "Mathematics");
+let teacher1 = new Teacher("ammar", 45, "economics");
 teacher1.introduce();
 teacher1.teach();
+
